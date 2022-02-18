@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f3f3;
+  color: #2c3338;
+}
+
+main {
+  height: 100vh;
+}
+
+section {
+  min-height: 250px;
+  background-color: #C9BBB0;
+}
+.censored{
+  color: #32383c;
+  background-color: #32383c;
+  border-radius: 5px;
+  text-decoration: none!important;
+}
+
+
+.drop {
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: Drop;
+  animation-timing-function: linear;
+  opacity: 0;
+  transform-origin: 0px 0px;
+  z-index: 2;
+}
+
+.rain {
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 25px;
+  position: absolute;
+  width: 1px;
+}
+
+@keyframes Drop {
+  0% {
+    opacity: 0.3;
+    top: 50px;
+	}
+
+  50% {
+    opacity: 0.5;
+    top: 400px;
+  }
+
+  100% {
+    opacity: 0.3;
+    top: 800px;
+
+  }
+}
+.link-group>*{
+  border-image: url('/assets/droplet.png');
+  border-left: 1px solid #8a7e75;
+  border-image-slice: 33%;
+  border-image-repeat: repeat;
+  border-image-width: 13px;
+}
+
+.img-border-2{
+  border-image: url('/assets/droplet2.png');
+  border-left: 1px solid #000000;
+  border-image-slice: 33%;
+  border-image-repeat: repeat;
+  border-image-width: 13px;
+}

@@ -1,0 +1,48 @@
+.content{
+    @apply w-full max-w-5xl mx-auto
+}
+
+section>*{
+    @apply content py-10
+}
+footer>*{
+    @apply content py-10
+}
+.link-group>*{
+    @apply p-5 border-l border-slate-600 border-dashed hover:text-slate-500/70
+}
+.link-group>:first-child{
+    @apply p-5 border-0
+}
+.link-group>*{
+    writing-mode:vertical-rl;
+    display: inline-block;
+    white-space: nowrap;
+    float:left;
+}
+.text-vertical{
+    writing-mode:vertical-rl;
+    display: inline-block;
+    white-space: nowrap;
+    float:left;
+}
+.auto{
+    @apply text-xs leading-5 sm:text-sm sm:leading-6 md:text-base md:leading-8
+}
+.auto-sm{
+    @apply text-xs sm:text-sm md:text-sm
+}
+.Tabs{
+    @apply w-full max-w-5xl mx-auto
+}
+
+.Tabs .Tabs-group{
+    @apply flex
+}
+.Tabs .Tab{
+    @apply rounded-t px-7 pt-3 pb-2 cursor-pointer hover:opacity-70
+}
+
+.Tabs .Tabs-Inner-group{
+    @apply rounded-r-md rounded-b-md p-10
+}
